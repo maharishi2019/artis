@@ -1,0 +1,27 @@
+:root {
+    --black: #2d4059;
+    --red: #ea5455;
+    --orange:#f07b3f;
+    --yellow:#ffd460;
+}
+
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--black);
+}
+
+a {
+    font-weight: bold;
+}
+
+a:link {
+    color: var(--yellow);
+}
+
+a:visited {
+    color: var(--orange);
+}
