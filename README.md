@@ -1,5 +1,3 @@
-# Artis
-
 ![Artis Logo](img/artisLogo.png)
 
 ## Purpose🤔
