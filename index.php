@@ -11,7 +11,7 @@
     <body>
         <div id="top-nav">
             <a id="redirect-link" href="index.php">Explore</a>
-            <a id="redirect-link" href="post.php">Post</a>
+            <a id="redirect-link" href="post.php">My Posts</a>
             <?php
                 if(!isset($_SESSION["username"])){
                     echo "<a id=\"user-info\" href=\"login.php\">Login/Signup</a>"; 
