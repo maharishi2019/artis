@@ -6,7 +6,8 @@
     <head>
         <title>Artis</title>
         <script src="script.js"></script>
-        <link rel="icon" href="img/artisLogo.png">
+        <link rel="icon" href="img/artisFavicon.png">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="login-div">
