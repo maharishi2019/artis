@@ -3,6 +3,7 @@
     <head>
         <title>Artis</title>
         <script src="script.js"></script>
+        <link rel="icon" href="img/artisLogo.png">
     </head>
     <body>
         <div id="login-div">
