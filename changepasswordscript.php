@@ -2,7 +2,7 @@
     session_start(); 
     $oldpassword = $_POST["oldpassword"]; 
     $newpassword = $_POST["newpassword"]; 
-    $connection = new mysqli("localhost", "root", "", "artis"); 
+    $connection = new mysqli($_SESSION["sql_hostname"], $_SESSION["sql_username"], $_SESSION["sql_password"], $_SESSION["database_name"]); 
     if($connection->connect_error){
         die("Connection failed" . $connection->connect_error); 
     }

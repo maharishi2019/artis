@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <?php 
     session_start(); 
+    $_SESSION["sql_username"] = "epiz_26095475"; 
+    $_SESSION["sql_password"] = "XhGQ9NWZPkZi"; 
+    $_SESSION["sql_hostname"] = "sql109.epizy.com"; 
+    $_SESSION["database_name"] = "epiz_26095475_artis"; 
 ?>
 <html>
     <head>
@@ -11,7 +15,6 @@
     </head>
     <body>
         <div id="top-nav">
-            <a id="redirect-link" href="index.php">Explore</a>
             <?php
                 if(!isset($_SESSION["username"])){
                     echo "<a id=\"user-info\" href=\"login.php\">Login/Signup</a>"; 

@@ -11,7 +11,7 @@
         echo "invalid email"; 
         exit(); 
     }
-    $connection = new mysqli("localhost", "root", "", "artis"); 
+    $connection = new mysqli($_SESSION["sql_hostname"], $_SESSION["sql_username"], $_SESSION["sql_password"], $_SESSION["database_name"]);
     if($connection->connect_error){
         die("Connection unsuccessful: " . $connection->connect_error); 
     }
