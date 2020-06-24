@@ -12,7 +12,7 @@
     $result = $connection->query($sql); 
     if($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
-            if($username == $row["username"] && $password = $row["user_password"]){
+            if($username == $row["username"] && $password == $row["user_password"]){
                 header("Location: index.php"); 
                 exit(); 
             }
