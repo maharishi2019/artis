@@ -10,7 +10,7 @@
             <h3 id="heading">Login</h3>
             <form autocomplete="off" id="login-form" action="loginscript.php" method="POST">
                 <label id="label" for="username">Username</label><br>
-                <input class="input-area" type="username" name="username" placeholder="Username" required><br>
+                <input class="input-area" type="text" name="username" placeholder="Username" required><br>
                 <label id="label" for="password">Password</label><br>
                 <input class="input-area" type="password" name="password" placeholder="Password" required><br>
                 <input type="submit" name="submit" value="Login">

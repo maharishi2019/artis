@@ -13,11 +13,11 @@
             <h3 id="heading">Signup</h3>
             <form autocomplete="off" id="login-form" action="signupscript.php" method="POST">
                 <label id="label" for="username">Username</label><br>
-                <input class="input-area" type="username" name="username" placeholder="Username" required><br>
+                <input class="input-area" type="text" name="username" placeholder="Username" required><br>
                 <label id="label" for="password">Password</label><br>
                 <input class="input-area" type="password" name="password" placeholder="Password" required><br>
                 <label id="label" for="email">Email</label><br>
-                <input class="input-area" type="email" name="email" placeholder="Email" required><br>
+                <input class="input-area" type="text" name="email" placeholder="Email" required><br>
                 <input type="submit" name="submit" value="Signup">
             </form>
         </div>

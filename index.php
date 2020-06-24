@@ -11,11 +11,12 @@
     <body>
         <div id="top-nav">
             <a id="redirect-link" href="index.php">Explore</a>
-            <a id="redirect-link" href="post.php">My Posts</a>
             <?php
                 if(!isset($_SESSION["username"])){
                     echo "<a id=\"user-info\" href=\"login.php\">Login/Signup</a>"; 
                 }else{
+                    echo "<a id=\"redirect-link\" href=\"post.php\">My Posts</a>"; 
+                    echo " <a id=\"user-info\" href=\"settings.php\">Settings</a>"; 
                     echo "<h3 id=\"welcome\">Hello ".$_SESSION["username"]."</h3>"; 
                 }
             ?>

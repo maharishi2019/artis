@@ -6,6 +6,11 @@
     $email = $_POST["email"]; 
     $_SESSION["email"] = $email; 
     $_SESSION["loggedin"] = true; 
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        session_destroy(); 
+        echo "invalid email"; 
+        exit(); 
+    }
     $connection = new mysqli("localhost", "root", "", "artis"); 
     if($connection->connect_error){
         die("Connection unsuccessful: " . $connection->connect_error); 
