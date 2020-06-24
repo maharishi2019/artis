@@ -4,7 +4,7 @@
         <title>Artis</title>
         <script src="script.js"></script>
         <link rel="icon" href="img/artisFavicon.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id="login-div">
