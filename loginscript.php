@@ -2,6 +2,7 @@
     session_start(); 
     $username = $_POST["username"]; 
     $_SESSION["username"] = $username; 
+    $_SESSION["loggedin"] = true; 
     $password = $_POST["password"]; 
     $connection = new mysqli("localhost", "root", "", "artis"); 
     if($connection->connect_error){

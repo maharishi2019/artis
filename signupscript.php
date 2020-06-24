@@ -5,6 +5,7 @@
     $password = $_POST["password"];
     $email = $_POST["email"]; 
     $_SESSION["email"] = $email; 
+    $_SESSION["loggedin"] = true; 
     $connection = new mysqli("localhost", "root", "", "artis"); 
     if($connection->connect_error){
         die("Connection unsuccessful: " . $connection->connect_error); 

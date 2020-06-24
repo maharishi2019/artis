@@ -18,10 +18,15 @@
                     echo "<h3 id=\"welcome\">Hello ".$_SESSION["username"]."</h3>"; 
                 }
             ?>
-            
         </div>
-        <form action="logout.php" method="POST">
-                <input type="submit" name="logout" value="Logout">
-        </form>
+        <div id="logout">
+            <?php
+                if(isset($_SESSION["loggedin"])){
+                    echo "<form action=\"logout.php\" method=\"POST\">
+                            <input type=\"submit\" name=\"logout\" value=\"Logout\">
+                        </form>"; 
+                }
+            ?>
+        </div>
     </body>
 </html>
