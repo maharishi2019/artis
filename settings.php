@@ -6,7 +6,7 @@
     <head>
         <title>Artis</title>
         <script src="script.js"></script>
-        <link rel="icon" href="img/artisLogo.png">
+        <link rel="icon" href="img/artisFavicon.png">
     </head>
     <body>
         <div id="top-nav">
