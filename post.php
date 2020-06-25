@@ -26,7 +26,7 @@
             ?>
         </div>
         <div id="posts">
-            <h3>Posts</h3>
+            <h3 id="explore-heading">Posts</h3>
             <table style="width: 100%">
                 <tr>
                     <th>Post Title</th>
@@ -50,7 +50,7 @@
                 ?>
             </table>
         </div>
-        <div id="new-post">
+        <div id="login-div">
             <h3>New Post</h3>
             <hr>
             <form id="new-post-form" action="newpostscript.php" method="POST">
