@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <?php 
     session_start(); 
-    $_SESSION["sql_username"] = "epiz_26095475"; 
-    $_SESSION["sql_password"] = "XhGQ9NWZPkZi"; 
-    $_SESSION["sql_hostname"] = "sql109.epizy.com"; 
-    $_SESSION["database_name"] = "epiz_26095475_artis"; 
+    $_SESSION["sql_username"] = "root"; 
+    $_SESSION["sql_password"] = ""; 
+    $_SESSION["sql_hostname"] = "localhost"; 
+    $_SESSION["database_name"] = "artis"; 
 ?>
 <html>
     <head>
@@ -24,18 +24,23 @@
         <div id="top-nav">
             <?php
                 if(!isset($_SESSION["username"])){
-                    echo "<a id=\"redirect-link\" href=\"login.php\">Login/Signup</a>"; 
+                    echo "<div id=\"click-button\"><a id=\"redirect-link\" href=\"login.php\">Login/Signup</a></div>"; 
                 }else{
-                    echo "<a id=\"redirect-link\" href=\"post.php\">My Posts</a>"; 
-                    echo " <a id=\"redirect-link\" href=\"settings.php\">Settings</a>"; 
+                    echo "<div id=\"click-button\"><a id=\"redirect-link\" href=\"post.php\">My Posts</a></div>"; 
+                    echo " <div id=\"click-button\"><a id=\"redirect-link\" href=\"settings.php\">Settings</a></div>";  
                     echo "<h5 id=\"welcome\">Logged in as: ".$_SESSION["username"]."</h5>"; 
+                }
+            ?>
+            <?php
+                if(isset($_SESSION["username"])){
+                    echo "<img id=\"logo\" src=\"img/artisLogo.png\">";; 
                 }
             ?>
         </div>
         <h3 id="explore-heading">Explore</h3>
         <div id="explore">
             <form action="visitpage.php" method="POST">
-                <input type="text" name="visit_user" placeholder="User Visit">
+                <input autocomplete="off" type="text" name="visit_user" placeholder="User Visit">
                 <input type="submit" name="submit" value="Search">
             </form>
         </div>

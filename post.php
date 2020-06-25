@@ -16,12 +16,12 @@
     </head>
     <body>
         <div id="top-nav">
-            <a id="redirect-link" href="index.php">Back</a>
+            <div id="click-button"><a id="redirect-link" href="index.php">Back</a></div>
             <?php
                 if(!isset($_SESSION["username"])){
-                    echo "<a id=\"redirect-link\" href=\"login.php\">Login/Signup</a>"; 
+                    echo "<div id=\"click-button\"><a id=\"redirect-link\" href=\"login.php\">Login/Signup</a></div>"; 
                 }else{
-                    echo "<a id=\"redirect-link\" href=\"settings.php\">Settings</a>"; 
+                    echo "<div id=\"click-button\"><a id=\"redirect-link\" href=\"settings.php\">Settings</a></div>"; 
                 }
             ?>
         </div>

@@ -1,10 +1,10 @@
 :root {
     --red: #DD0426; 
+    --darker_red: #ad001a; 
 }
 * {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--mintcream); 
 }
 
 #top-nav {
@@ -18,18 +18,24 @@
     padding-right: 10px; 
 }
 body {
+    background-image: url("img/dark-triangles.png"); 
 }
 
 #redirect-link{
     text-decoration: none; 
     color: black;  
-    padding: 12px 12px; 
+    padding: 10px 10px; 
     background-color: var(--red); 
 }
 
+#redirect-link:hover{
+    padding: 13px 13px; 
+    background-color: var(--darker_red); 
+}
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse;
+    color: white; 
 }
 
 th, td {
@@ -73,6 +79,8 @@ input[type="password"] {
 
 #explore-heading {
     text-align: center; 
+    color: white; 
+    margin-top: 2%; 
 }
 
 textarea {
@@ -94,4 +102,21 @@ textarea {
 
 #form-heading{
     margin-top: 10%; 
+}
+
+#click-button{
+    margin-top: 2%; 
+    display: inline-block; 
+    margin-left: 1%; 
+    box-shadow: 3px 3px 8px black; 
+}
+
+#welcome{
+    color: white; 
+}
+
+#logo {
+    margin-left: 30%; 
+    display: inline-block; 
+    width: 128px; 
 }

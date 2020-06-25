@@ -16,7 +16,7 @@
     </head>
     <body>
         <div id="top-nav">
-            <a id="redirect-link" href="index.php">Back</a>
+            <div id="click-button"><a id="redirect-link" href="index.php">Back</a></div>
         </div>
         <h3 id="explore-heading">Settings</h3>
         <div id="login-div">

@@ -14,17 +14,19 @@
     <body>
         <?php
             $_SESSION["visiting_user"] = $_POST["visit_user"]; 
-            if($_SESSION["visiting_user"] == $_SESSION["username"]){
-                header("Location: post.php"); 
+            if($_SESSION["visiting_user"] && isset($_SESSION["username"])){
+                if($_SESSION["visiting_user"] == $_SESSION["username"]){
+                    header("Location: post.php"); 
+                }
             }
         ?>
         <div id="top-nav">
             <?php
                 if(!isset($_SESSION["username"])){
-                    echo "<a id=\"redirect-link\" href=\"login.php\">Login/Signup</a>"; 
+                    echo "<div id=\"click-button\"><a id=\"redirect-link\" href=\"login.php\">Login/Signup</a></div>"; 
                 }else{
-                    echo "<a id=\"redirect-link\" href=\"index.php\">Back</a>"; 
-                    echo " <a id=\"redirect-link\" href=\"post.php\">My Posts</a>"; 
+                    echo "<div id=\"click-button\"><a id=\"redirect-link\" href=\"index.php\">Back</a></div>"; 
+                    echo " <div id=\"click-button\"><a id=\"redirect-link\" href=\"post.php\">My Posts</a></div>"; 
                     echo "<h5 id=\"welcome\">Logged in as: ".$_SESSION["username"]."</h5>"; 
                 }
             ?>
