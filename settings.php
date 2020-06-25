@@ -18,6 +18,7 @@
         <div id="top-nav">
             <a id="redirect-link" href="index.php">Back</a>
         </div>
+        <h3 id="explore-heading">Settings</h3>
         <div id="login-div">
             <form action="changepasswordscript.php" method="POST">
                 <label id="label" for="email">Current Password</label><br>

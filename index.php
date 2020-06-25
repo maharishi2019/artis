@@ -29,27 +29,10 @@
         </div>
         <h3 id="explore-heading">Explore</h3>
         <div id="explore">
-            <?php
-                $connection = new mysqli($_SESSION["sql_hostname"], $_SESSION["sql_username"], $_SESSION["sql_password"], $_SESSION["database_name"]);
-                if($connection->connect_error){
-                    die("Connection failed " . $connection->connect_error); 
-                }
-                $sql = "SELECT username FROM user_table"; 
-                $result1 = $connection->query($sql); 
-                if($result1->num_rows > 0){
-                    while($row1 = $result1->fetch_assoc()){
-                        echo "<h3>".$row1["username"]."</h3><hr>"; 
-                        $result = "SELECT post_name, post_description FROM `".$row1["username"]."`"; 
-                        $result2 = $connection->query($result); 
-                        if($result2->num_rows > 0){
-                            while($row2 = $result2->fetch_assoc()){
-                                echo "<p>".$row2["post_name"]."</p>"; 
-                                echo "<p>".$row2["post_description"]."</p>"; 
-                            }
-                        }
-                    }
-                }
-            ?>
+            <form action="visitpage.php" method="POST">
+                <input type="text" name="visit_user" placeholder="User Visit">
+                <input type="submit" name="submit" value="Search">
+            </form>
         </div>
         <div id="logout">
             <?php
