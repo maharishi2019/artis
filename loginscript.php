@@ -2,7 +2,6 @@
     session_start(); 
     $username = $_POST["username"]; 
     $_SESSION["username"] = $username; 
-    $_SESSION["loggedin"] = true; 
     $password = $_POST["password"]; 
     $connection = new mysqli($_SESSION["sql_hostname"], $_SESSION["sql_username"], $_SESSION["sql_password"], $_SESSION["database_name"]);
     if($connection->connect_error){
@@ -13,6 +12,7 @@
     if($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
             if($username == $row["username"] && $password == $row["user_password"]){
+                $_SESSION["loggedin"] = true; 
                 header("Location: index.php"); 
                 exit(); 
             }

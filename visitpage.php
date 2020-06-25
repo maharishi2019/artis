@@ -14,7 +14,7 @@
     <body>
         <?php
             $_SESSION["visiting_user"] = $_POST["visit_user"]; 
-            if($_SESSION["visiting_user"] = $_SESSION["username"]){
+            if($_SESSION["visiting_user"] == $_SESSION["username"]){
                 header("Location: post.php"); 
             }
         ?>

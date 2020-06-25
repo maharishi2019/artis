@@ -16,6 +16,11 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
+        <?php
+            if(!isset($_SESSION["loggedin"]) && isset($_SESSION["username"])){
+                header("Location: login.php"); 
+            }
+        ?>
         <div id="top-nav">
             <?php
                 if(!isset($_SESSION["username"])){
