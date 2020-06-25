@@ -17,11 +17,11 @@
         <div id="top-nav">
             <?php
                 if(!isset($_SESSION["username"])){
-                    echo "<a id=\"user-info\" href=\"login.php\">Login/Signup</a>"; 
+                    echo "<a id=\"redirect-link\" href=\"login.php\">Login/Signup</a>"; 
                 }else{
                     echo "<a id=\"redirect-link\" href=\"post.php\">My Posts</a>"; 
-                    echo " <a id=\"user-info\" href=\"settings.php\">Settings</a>"; 
-                    echo "<h3 id=\"welcome\">Hello ".$_SESSION["username"]."</h3>"; 
+                    echo " <a id=\"redirect-link\" href=\"settings.php\">Settings</a>"; 
+                    echo "<h3 id=\"welcome\">Logged in as: ".$_SESSION["username"]."</h3>"; 
                 }
             ?>
         </div>

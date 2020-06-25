@@ -14,9 +14,9 @@
             <a id="redirect-link" href="index.php">Back</a>
             <?php
                 if(!isset($_SESSION["username"])){
-                    echo "<a id=\"user-info\" href=\"login.php\">Login/Signup</a>"; 
+                    echo "<a id=\"redirect-link\" href=\"login.php\">Login/Signup</a>"; 
                 }else{
-                    echo "<a id=\"user-info\" href=\"settings.php\">Settings</a>"; 
+                    echo "<a id=\"redirect-link\" href=\"settings.php\">Settings</a>"; 
                 }
             ?>
         </div>
@@ -50,9 +50,9 @@
             <hr>
             <form id="new-post-form" action="newpostscript.php" method="POST">
                 <label id="label" for="post_title">Title</label><br>
-                <input id="text-area" type="text" name="post_title" placeholder="Title"><br>
+                <input autocomplete="off" id="text-area" type="text" name="post_title" placeholder="Title"><br>
                 <label id="label" for="post_description">Description</label><br>
-                <input id="text-area" type="text" name="post_description" placeholder="Description"><br>
+                <input autocomplete="off" oid="text-area" type="text" name="post_description" placeholder="Description"><br>
                 <input type="submit" name="submit" value="Post">
             </form>
         </div>

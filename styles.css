@@ -10,33 +10,51 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#top-nav {
+    background-color: var(--orange); 
+    width: 100%; 
+    height: 5vh; 
+}
+
+#welcome {
+    float: right; 
+    display: inline-block; 
+    padding-right: 10px; 
+}
 body {
     background-color: var(--black);
 }
 
-a {
-    font-weight: bold;
-}
-
-a:link {
-    color: var(--yellow);
-}
-
-a:visited {
-    color: var(--orange);
+#redirect-link{
+    font-weight: bold; 
+    background-color: var(--yellow);
+    text-decoration: none; 
+    color: var(--black); 
+    padding: 12px 12px; 
 }
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
 th, td {
     padding: 15px;
 }
+
 th {
     text-align: left;
 }
 
 table {
     border-spacing: 5px;
+}
+
+input[type=submit] {
+    background-color: var(--red); 
+}
+
+#account{
+    color: var(--yellow); 
+    text-decoration-color: none; 
 }

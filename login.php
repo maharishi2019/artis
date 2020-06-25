@@ -14,9 +14,9 @@
                 <input class="input-area" type="text" name="username" placeholder="Username" required><br>
                 <label id="label" for="password">Password</label><br>
                 <input class="input-area" type="password" name="password" placeholder="Password" required><br>
+                <a id="account" href="signup.php">Don't have an account?</a><br>
                 <input type="submit" name="submit" value="Login">
             </form>
-            <a href="signup.php">Don't have an account?</a>
         </div>
     </body>
 </html>

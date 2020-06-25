@@ -19,7 +19,7 @@
                 <input class="input-area" type="password" name="password" placeholder="Password" required><br>
                 <label id="label" for="email">Email</label><br>
                 <input class="input-area" type="text" name="email" placeholder="Email" required><br>
-                <a id="redirect-link" href="login.php">Already have an account?</a><br>
+                <a id="account" href="login.php">Already have an account?</a><br>
                 <input type="submit" name="submit" value="Signup">
             </form>
         </div>
