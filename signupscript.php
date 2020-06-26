@@ -30,6 +30,7 @@
         echo "Success"; 
     }else{
         echo "Failed ".$connection->error; 
+        session_destroy(); 
     }
     //creates a post table for the new user
     $sql = "CREATE TABLE ".$username." (post_name varchar(255), post_description varchar(255))"; 
@@ -37,6 +38,7 @@
         echo "Success";
     }else{
         echo "Failed".$connection->error; 
+        session_destroy(); 
     }
     header("Location: index.php"); 
 ?>

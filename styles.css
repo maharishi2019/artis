@@ -75,6 +75,7 @@ input[type="password"] {
     padding-top: 50px; 
     padding-bottom: 50px; 
     width: 30%; 
+    box-shadow: 3px 3px 8px black; 
 }
 
 #explore-heading {
@@ -98,6 +99,7 @@ textarea {
     padding-top: 50px; 
     padding-bottom: 50px; 
     width: 30%; 
+    box-shadow: 3px 3px 8px black; 
 }
 
 #form-heading{
