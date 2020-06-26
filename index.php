@@ -33,7 +33,7 @@
             ?>
             <?php
                 if(isset($_SESSION["username"])){
-                    echo "<img id=\"logo\" src=\"img/artisLogo.png\">";; 
+                    echo "<img id=\"logo\" src=\"img/artisFavicon.png\">";; 
                 }
             ?>
         </div>
